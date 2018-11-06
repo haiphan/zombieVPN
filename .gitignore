@@ -1,0 +1,15 @@
+# IDE
+.idea
+.iml
+
+# dependencies
+package-lock.json
+node_modules
+
+# production
+dist
+
+# misc
+.DS_Store
+.tmp
+npm-debug.log

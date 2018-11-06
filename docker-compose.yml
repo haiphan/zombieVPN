@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  zvpn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run test
+    depends_on:
+      - dynamo
+    ports:
+    - "5555:3001"
+    - "6666:3002"
+    volumes:
+    - ./src:/app/src:rw
+    - ./package.json:/app/package.json:rw
+    - ./tsconfig.json:/app/tsconfig.json:rw
