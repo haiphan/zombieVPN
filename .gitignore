@@ -11,5 +11,5 @@ dist
 
 # misc
 .DS_Store
-.tmp
+*.tmp
 npm-debug.log
