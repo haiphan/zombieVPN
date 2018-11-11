@@ -36,10 +36,11 @@ docker-compose -f docker-compose-server.yml up
 ## Notes
 Put the client's private key in id_zvpn. This one the client keeps secret.
 The client's public key is in id_zvpn.pub. This one the server needs access.
+
 VPN-1
 Add random padding to confuse the attacker about the size of the packet
 
 VPN-2
 Public IP of the VPN server. Receiver Bob may send response back to this address. In this app it is not really used since the receiver can just get it from layer 3.
 
-
+VPN-3 This will confuse the attacker a bit more. Packets are sent with random delays. Thus may change their ordering. But is bad for time critical application. In this vpn app security is the first priority so I put this here. TCP, or the application layer can take care of reordering packets at the end.

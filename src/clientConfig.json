@@ -1,0 +1,6 @@
+{
+  "serverAddr": "localhost",
+  "serverPort": 3002,
+  "clientPort": 3001,
+  "clientCert": "./src/id_rsa_zvpn"
+}

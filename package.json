@@ -6,18 +6,22 @@
   "scripts": {
     "test": "jest --runInBand",
     "build": "tsc",
-    "start-client": "ts-node-dev src/client.ts --ignore-watch node_modules",
-    "start-server": "ts-node-dev src/server.ts --ignore-watch node_modules",
-    "sendtest": "ts-node-dev src/sendtest.ts --ignore-watch node_modules",
-    "hai": "ts-node-dev src/vpnUtils.ts --ignore-watch node_modules"
+    "start-client": "ts-node src/client.ts",
+    "start-server": "ts-node src/server.ts",
+    "sendtest": "ts-node src/sendtest.ts"
   },
   "author": "hai.phan@zervant.com",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.3",
     "crypto-random-string": "^1.0.0",
     "udp-request": "^2.0.0"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.24",
+    "@types/filesystem": "0.0.29",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.5",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.3",
     "ts-node": "^7.0.1",
