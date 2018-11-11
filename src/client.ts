@@ -51,5 +51,6 @@ try {
   startClient();
 } catch (e) {
   console.log(e);
+  socket.destroy();
   process.exit(1);
 }
